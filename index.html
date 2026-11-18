@@ -3,53 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <title>Bootstrap Store</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <title>Everyday Edit | Home</title>
 </head>
-<body>
+
+<body class="bg-light">
+
+<!-- NAVBAR -->
 <header>
-<nav class="navbar md:navbar-expand bg-1">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" aria-hidden="true"></span>
-    </button>
-    <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
-      <div class="drawer-header">
-        <h5 class="drawer-title" id="navbarDrawerLabel">Products</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
-      </div>
-      <div class="drawer-body mb-2 md:mb-0">
-        <ul class="nav navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false" href="products.html">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </dialog>
-  </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-4" href="index.html">
+            EVERYDAY EDIT.
+        </a>
+
+        <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false"
+        aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto gap-lg-3">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
 </nav>
 </header>
 
-<section class="welcome-container">
-    <div class="store-intro">
-        <h1>Welcome to the Bootstrap Store</h1>
-        <p>Where your all your needs and desires are covered.</p>
-    </div>
-</section>
+<!-- MAIN CONTENT -->
+<main class="flex-grow-1">
 
-<footer class="100vh">
-        <h2 class="text-center">BootStrap<span> Store</span></h2>
-        <p class="copyright text-center">© 2026 Bootstrap Store. All rights reserved.</p>
+    <!-- WELCOME SECTION -->
+    <section class="container text-center py-5 animate__animated animate__fadeInUp">
+
+        <p class="text-uppercase text-secondary fw-semibold small">
+            Accessories for every occasion
+        </p>
+
+        <h1 class="display-4 fw-bold">
+            A little detail.<br>
+            A whole lot of style.
+        </h1>
+
+        <p class="lead text-secondary mt-3">
+            Discover everyday accessories that make every outfit feel complete.
+        </p>
+
+        <a href="products.html" class="btn btn-dark btn-lg mt-3 px-4">
+            Explore the collection
+        </a>
+
+    </section>
+
+    <!-- BOOTSTRAP ALERT -->
+    <div class="container mb-4">
+        <div class="alert alert-warning text-center border-0 mb-0" role="alert">
+            <strong>A little something for you:</strong>
+            Discover accessories you'll want to wear every day.
+        </div>
+    </div>
+
+    <!-- IMAGE CAROUSEL -->
+    <section class="container mb-5">
+
+        <div id="storeCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#storeCarousel"
+                data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#storeCarousel"
+                data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#storeCarousel"
+                data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner rounded">
+
+                <div class="carousel-item active">
+                    <img
+                    src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1400"
+                    class="d-block w-100"
+                    alt="Elegant jewellery collection">
+
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h2>Details that make a difference</h2>
+                        <p>Find the finishing touch to your look.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1400"
+                    class="d-block w-100"
+                    alt="Classic wristwatch">
+
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h2>Timeless everyday pieces</h2>
+                        <p>Simple accessories. Lasting style.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img
+                    src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=1400"
+                    class="d-block w-100"
+                    alt="Stylish sunglasses">
+
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h2>Make your own statement</h2>
+                        <p>Accessories that reflect your personality.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button"
+            data-bs-target="#storeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button"
+            data-bs-target="#storeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED SECTION -->
+    <section class="container text-center py-4">
+
+        <p class="text-uppercase text-secondary small fw-semibold">
+            Our philosophy
+        </p>
+
+        <h2 class="fw-bold mb-3">Style is in the details.</h2>
+
+        <p class="text-secondary mx-auto mb-5" style="max-width: 650px;">
+            From simple everyday essentials to statement pieces,
+            we believe the right accessory can bring an entire look together.
+            Find something that feels like you.
+        </p>
+
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=700"
+                    class="card-img-top"
+                    alt="Minimal jewellery accessories">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="card-title fw-bold">
+                            The little things
+                        </h3>
+
+                        <p class="card-text text-secondary">
+                            Explore our collection of accessories
+                            designed to complement your everyday style.
+                        </p>
+
+                        <a href="products.html" class="btn btn-outline-dark">
+                            View our products
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light text-center py-4 mt-auto">
+
+    <h4 class="fw-bold">EVERYDAY EDIT.</h4>
+
+    <p class="text-white-50 mb-2">
+        The finishing touches matter.
+    </p>
+
+    <p class="small text-white-50 mb-0">
+        © 2026 Everyday Edit. All rights reserved.
+    </p>
+
 </footer>
+
 </body>
 </html>
